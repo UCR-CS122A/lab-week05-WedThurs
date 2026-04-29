@@ -21,16 +21,19 @@ We finally get to use the 480×272 RGB LCD panel. The way this device works is a
 ### Interface
 
 ```verilog
-input  rst,
-input  pclk,        // should get 8MHz clk
+module top
+(
+    input  rst,
+    input  pclk,        // should get 8MHz clk
 
-output LCD_DE,      // Display Enable
-output LCD_HSYNC,   // Horizontal Sync
-output LCD_VSYNC,   // Vertical Sync
+    output LCD_DE,      // Display Enable
+    output LCD_HSYNC,   // Horizontal Sync
+    output LCD_VSYNC,   // Vertical Sync
 
-output [4:0] LCD_B, // 5-bit blue color data
-output [5:0] LCD_G, // 6-bit green color data
-output [4:0] LCD_R  // 5-bit red color data
+    output [4:0] LCD_B, // 5-bit blue color data
+    output [5:0] LCD_G, // 6-bit green color data
+    output [4:0] LCD_R  // 5-bit red color data
+);
 ```
 
 ### Timing Protocol
@@ -43,7 +46,7 @@ The RGB LCD panels follow a timing protocol similar to the older VGA protocol. I
 - **VSYNC** — vertical sync pulse, fired once per frame
 - **DE (Data Enable)** — asserted high only during the *active* pixel region; the panel ignores pixel data when DE is low
 
-A full frame consists of more clock cycles than just the visible pixels. The extra cycles are called the **front porch**, **back porch**, and **sync pulse** — they are legacy blanking intervals inherited from CRT (Cathode Ray Tube) electron-gun timing, but modern LCD panels still require them.
+It's important to understand, that a full frame consists of more clock cycles than just the visible pixels. The extra cycles are called the **front porch**, **back porch**, and **sync pulse** — they are legacy blanking intervals inherited from CRT era (Cathode Ray Tube) (related to electron-gun timing), but modern LCD panels still require them.
 
 ### Timing Parameters
 
