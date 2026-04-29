@@ -4,10 +4,8 @@ This lab, you'll be setting up the RGB TFT Screen.
 
 ### Required Compoenents
 1. 1x FPGA (either ICESuger or ICESuger-pro)
-1. 1x DIP switch (in total 1 switch will be used)
-1. 2x Raspberry Pi Picos
-1. 12x LEDs (with 220Ohm resistors)
-1. Breadboard + enough wires to connect everything
+1. 1x RGB Screen
+2. 1x Ribbon-cable to PMOD Adapter
 
 ### Wiring
 You will be using one of the 30-pin PMOD connectors to hook up the RGB LCD to your FPGA. We reccomend using P6.
