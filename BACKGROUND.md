@@ -66,7 +66,7 @@ Bit: 15 14 13 12 11 | 10  9  8  7  6  5 |  4  3  2  1  0
 >Green gets one extra bit because the human eye is most sensitive to green.
 
 ## Implementation
-You will need to create a module that controls the screen. Each clock cycle writes a pixel to the screen. In order to know which part of the screen you are currently at, you should have 2 variable used to keep track of the x and y position and update them based on the clock. While the screen resultion is 480x272, you will need to take the buffer portion as well for high your x and y variable can go up to(525x285). Then the DE pin is set to high only when in the active region, meaning within the normal 480x272 area. The values on the R, G and B pins, when the clock ticks, is what determines what color will be set for the pixel of that clock cycle.
+You will need to create a module that controls the screen. Each clock cycle writes a pixel to the screen. In order to know which part of the screen you are currently at, you should have 2 variable used to keep track of the x and y position and update them based on the clock. While the screen resultion is 480x272, you will need to take the buffer portion into consideration as well for how high your x and y variable can go up to(525x285). Then the DE pin is set to high only when in the active region, meaning within the normal 480x272 area. The values on the R, G and B pins, when the clock ticks, is what determines what color will be set for the pixel of that clock cycle.
 
 ## Pin Assignments
 
