@@ -19,7 +19,7 @@ We finally get to use the 480×272 RGB LCD panel.
 ### Interface
 
 ```verilog
-module top
+module lcd
 (
     input  rst,
     input  pclk,        // should get 8MHz clk
