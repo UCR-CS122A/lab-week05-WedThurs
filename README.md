@@ -16,9 +16,9 @@ Don't forget to use the ribbon-cable to PMOD adapter.
 ```verilog
 module top
 (
-  input  CLK,
+  input  CLK, //FPGA's clocck
 
-	output LCD_CLK,
+	output LCD_CLK,//LCD clock. Should be 8MHz
 	output LCD_DEN,
 	output [4:0] LCD_R,
 	output [5:0] LCD_G,
