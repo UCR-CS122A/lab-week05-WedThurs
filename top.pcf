@@ -3,8 +3,6 @@ set_io reset    18
 set_io CLK      35
 
 set_io LCD_CLK  32
-set_io LCD_HYNC 28
-set_io LCD_SYNC 26
 set_io LCD_DEN  23
 
 set_io LCD_R[0] 46
