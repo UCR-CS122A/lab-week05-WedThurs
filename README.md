@@ -13,6 +13,19 @@ You will be using one of the 30-pin PMOD connectors to hook up the RGB LCD to yo
 Don't forget to use the ribbon-cable to PMOD adapter.
 
 ## System Description
+```verilog
+module top
+(
+  input  CLK,
+
+	output LCD_CLK,
+	output LCD_DEN,
+	output [4:0] LCD_R,
+	output [5:0] LCD_G,
+	output [4:0] LCD_B,
+);
+
+```
 
 You will be displaying three colors on the RGB screen. 1/3 of the screen should be red. Another 1/3 of the screen should be blue, and the another 1/3 should be green.
 
