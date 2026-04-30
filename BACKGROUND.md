@@ -10,7 +10,7 @@ We finally get to use the 480×272 RGB LCD panel.
 module lcd
 (
     input  rst,
-    input  pclk,        // should get 8MHz clk
+    input  pclk,        
 
     output LCD_DE,      // Display Enable
 
