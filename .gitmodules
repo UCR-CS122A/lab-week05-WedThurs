@@ -1,0 +1,3 @@
+[submodule "lab-common"]
+	path = lab-common
+	url = git@github.com:UCR-CS122A/lab-common.git
