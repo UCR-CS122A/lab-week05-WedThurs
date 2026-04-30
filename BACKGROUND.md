@@ -1,17 +1,5 @@
 # Background
 
-## PLL
-
-The iCESugar Pro runs at 25MHz which is way to fast for the RGB LCD. We use an inbuilt FPGA primitive called a Phase Locked Loop or PLL to drop the frequency down from 25MHz to 8MHz.
-
-Configuring PLLs is a process that varies with FPGAs and tooling. While it is possible to figure out the configuration digging through forums and datasheets, OSS-CAD-Suite provides a tool called `ecppll` specifically for configuring the PLL on the ECP5 FPGA. You can change the frequency with the following tool call:
-
-```bash
-ecppll -i 25 -o 8 --highres -f ecppll.v
-```
-
-This generates the SV necessary for spitting out . 
-
 ## RGB LCD Panel
 
 We finally get to use the 480×272 RGB LCD panel.
