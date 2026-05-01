@@ -30,3 +30,9 @@ module top
 You will be displaying three colors on the RGB screen. 1/3 of the screen should be red. Another 1/3 of the screen should be blue, and the another 1/3 should be green.
 
 Reference BACKGROUND.md for an explanation on how the RGB Screen works.
+
+
+## Demo
+![RGB](https://github.com/UCR-CS122A/lab-week05-WedThurs/blob/main/IMG_1525.JPG)
+
+>Please note that this particular image shows 6 distinct colors. We don't need to see 6, just Red Green and Blue bars.
